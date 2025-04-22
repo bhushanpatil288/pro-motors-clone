@@ -1,4 +1,11 @@
+body{
+    background-color: var(--body-black) !important;
+}
 /* header start */
+
+header{
+    background-color: var(--second-black);
+}
 
 .navLinks ul li:hover{
     color: var(--accent-clr);
@@ -32,7 +39,7 @@
 }
 .submenu{
     position: absolute;
-    background: var(--black);
+    background: var(--body-black) !important;
     top: 100%;
     left: 0;
     margin-top: 34px;
@@ -92,9 +99,10 @@
 
 /* offcanvas start */
 
-.offcanvas-body ul li{
-    
+.offcanvas{
+    width: 250px !important;
 }
+
 .offcanvas-body ul li:hover{
     transition: var(--transition-1);
     color: var(--accent-clr);
@@ -108,6 +116,76 @@
 
 
 /* main start */
+
+/* hero start */
+
+.secHeading{
+    font-size: 170px;
+    z-index: -1;
+    color: red;
+    user-select: none;
+    color: transparent;
+    -webkit-text-stroke: 2px #242424; /* 2px border with black color */
+
+    top: -100px;
+}
+
+.mainHeading{
+    color: var(--heading-clr);
+    font-size: 66px;
+}
+
+.hero-left{
+    min-height: 590px;
+}
+
+.car-image{
+    height: 700px;
+    width: 700px;
+    bottom: -300px;
+    right: 0;
+    animation: bouce 0.8s linear none 3;
+}
+
+@keyframes bouce {
+    0%{
+        bottom: -300px;
+    }
+    50%{
+        bottom: -290px;
+    }
+    100%{
+        bottom: -300px;
+    }
+}
+
+.video-holder{
+    margin-top: 100px;
+}
+
+.video-holder img{
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+    transition: all 200ms linear 0ms;
+}
+
+.video-holder:hover img{
+    transform: scale(1.15) rotate(-.5deg);
+}
+
+.video-holder button{
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 0px 9px 7px;
+    clip-path: polygon(13px 0, 100% 0, 100% calc(100% - 13px), calc(100% - 13px) 100%, 0 100%, 0 13px);
+}
+.video-holder button img{
+    margin-top: 10px;
+}
+
+/* hero end */
 
 /* main end */
 

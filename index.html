@@ -25,7 +25,7 @@
 </head>
 <body>
     <!-- header start -->
-    <header class="pt-4 pb-4 bg-black text-second">
+    <header class="pt-4 pb-4 text-second">
         <div class="container">
             <nav class="d-flex justify-content-between align-items-center">
 
@@ -38,11 +38,33 @@
                 <!-- nav links start -->
                 <div class="navLinks chakra d-none d-lg-block">
                     <ul class="d-flex list-unstyled gap-5 align-items-center mb-0">
-                        <li class="fw-bold position-relative pointer">HOME</li>
-                        <li class="fw-bold position-relative pointer">PAGES</li>
+                        <li class="fw-bold position-relative pointer d-flex align-items-center">
+                            HOME
+                            <ul class="submenu ps-0">
+                                <li>HOME 1</li>
+                                <li>HOME 2</li>
+                                <li>HOME 3</li>
+                                <li>HOME 4</li>
+                            </ul>
+                        </li>
+                        <li class="fw-bold position-relative pointer">
+                            PAGES
+                            <ul class="submenu ps-0">
+                                <li>ABOUT</li>
+                                <li>TEAM</li>
+                                <li>PRICES</li>
+                                <li>OFFERS</li>
+                                <li>OUR WORKS</li>
+                                <li>PROMOTION DETAILS</li>
+                                <li>FAQ</li>
+                                <li>404</li>
+                                <li>CONTACT</li>
+                                <li>LANDING</li>
+                            </ul>
+                        </li>
                         <li class="fw-bold position-relative pointer">
                             SERVICES
-                            <ul class="submenu">
+                            <ul class="submenu ps-0">
                                 <li>SERVICES 1</li>
                                 <li>SERVICES 2</li>
                                 <li>SINGLE SERVICE 1</li>
@@ -72,7 +94,52 @@
     </header>
     <!-- header end -->
     <!-- main start -->
-    <main></main>
+    <main>
+        <!-- hero section start -->
+        <div class="hero text-white overflow-hidden pt-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-9">
+                        <div class="hero-left d-lg-flex position-relative d-block">
+                            <div class="position-relative">
+                                <h2 class="secHeading chakra h1 position-absolute d-none d-md-block">PROMOTORS</h2>
+                                <h1 class="mainHeading chakra fw-bold heading-clr">BOOK YOUR CAR <br /> SERVICE</h1>
+                                <p class="mulish fw-semibold text-second">
+                                    Elit ullamcorper dignissim cras tincidunt lobortis <br /> feugiat. Eget velit aliquet sagittis
+                                </p>
+                                <button class="styled-btn">BOOK ONLINE</button>
+                            </div>
+                            <div class="car-image position-absolute mt-5 mt-lg-0">
+                                <img src="./assets/images/hero-car.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3">
+                        <div class="mt-5 mt-lg-0">
+                            <h3 class="text-first chakra fw-bold">RECOMMENDATIONS</h3>
+                            <div class="mt-4">
+                                <span class="text-first fw-bold chakra fs-4">01</span>
+                                <span class="fw-semibold chakra fs-4 ms-2">INTERIM SERVICE</span>
+                                <p class="text-second mulish mt-2">Every 6 months or 6,000 miles (whichever comes first)</p>
+                            </div>
+                            <div class="mt-4">
+                                <span class="text-first fw-bold chakra fs-4">01</span>
+                                <span class="fw-semibold chakra fs-4 ms-2">FULL SERVICE</span>
+                                <p class="text-second mulish mt-2">Every 12 months or 12,000 miles (whichever comes first)</p>
+                            </div>
+                            <div class="video-holder position-relative overflow-hidden"> 
+                                <img loading="lazy" decoding="async" class="img-fluid" src="./assets/images/hero/hero-video-preview.jpg"alt="about-1" title="about-1">
+                                <button class="styled-btn position-absolute">
+                                    <img src="./assets/images/play-fill.png" alt="" class="invert">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hero section end -->
+    </main>
     <!-- main end -->
     <!-- footer start -->
     <footer></footer>
@@ -82,9 +149,9 @@
       <div class="offcanvas offcanvas-start chakra bg-black text-white" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvas-title">
-            <img src="./assets/images/logo.png" alt="" width="230px">
+            <img src="./assets/images/logo.png" alt="" width="180px">
           </h5>
-          <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close shadow-none invert" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <div>
@@ -93,26 +160,108 @@
                     <p class="d-inline-flex gap-1">
                         <div class="offcanvas-li-container w-100 border-bottom d-flex justify-content-between align-items-center pb-2">
                             <p class="mb-0">HOME</p>
-                            <a class="btn p-1 border-white" data-bs-toggle="collapse" href="#collapse" role="button" aria-expanded="false">
+                            <a class="btn p-1 border-white" data-bs-toggle="collapse" href="#collapse-1" role="button" aria-expanded="false">
                                 <img src="./assets/images/arrow-down.png" alt="" class="invert">
                             </a>
                         </div>
                       </p>
-                      <div class="collapse" id="collapse">
+                      <div class="collapse" id="collapse-1">
                         <div class="card card-body bg-black">
                             <ul class="offcanvas-submenu list-unstyled text-white d-flex flex-column gap-2">
-                                <li>SERVICE 1</li>
-                                <li>SERVICE 2</li>
-                                <li>SINGLE SERVICE 1</li>
-                                <li>SINGLE SERVICE 2</li>
+                                <li>HOME 1</li>
+                                <li>HOME 2</li>
+                                <li>HOME 3</li>
+                                <li>HOME 4</li>
                             </ul>
                         </div>
                       </div>
                 </li>
-                <li class="pointer fw-bold">PAGES</li>
-                <li class="pointer fw-bold">SERVICES</li>
-                <li class="pointer fw-bold">SHOP</li>
-                <li class="pointer fw-bold">BLOG</li>
+                <li class="pointer fw-bold">
+                    <p class="d-inline-flex gap-1">
+                        <div class="offcanvas-li-container w-100 border-bottom d-flex justify-content-between align-items-center pb-2">
+                            <p class="mb-0">PAGES</p>
+                            <a class="btn p-1 border-white" data-bs-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false">
+                                <img src="./assets/images/arrow-down.png" alt="" class="invert">
+                            </a>
+                        </div>
+                      </p>
+                      <div class="collapse" id="collapse-2">
+                        <div class="card card-body bg-black">
+                            <ul class="offcanvas-submenu list-unstyled text-white d-flex flex-column gap-2">
+                                <li>ABOUT</li>
+                                <li>TEAM</li>
+                                <li>PRICES</li>
+                                <li>OFFERS</li>
+                                <li>OUR WORKS</li>
+                                <li>PROMOTION DETAILS</li>
+                                <li>FAQ</li>
+                                <li>404</li>
+                                <li>CONTACTS</li>
+                                <li>LANDING</li>
+                            </ul>
+                        </div>
+                      </div>
+                </li>
+                <li class="pointer fw-bold">
+                    <p class="d-inline-flex gap-1">
+                        <div class="offcanvas-li-container w-100 border-bottom d-flex justify-content-between align-items-center pb-2">
+                            <p class="mb-0">SERVICES</p>
+                            <a class="btn p-1 border-white" data-bs-toggle="collapse" href="#collapse-3" role="button" aria-expanded="false">
+                                <img src="./assets/images/arrow-down.png" alt="" class="invert">
+                            </a>
+                        </div>
+                      </p>
+                      <div class="collapse" id="collapse-3">
+                        <div class="card card-body bg-black">
+                            <ul class="offcanvas-submenu list-unstyled text-white d-flex flex-column gap-2">
+                                <li>SERVICE 1</li>
+                                <li>SERVICE 2</li>
+                                <li>SERVICE ITEM 1</li>
+                                <li>SERVICE ITEM 2</li>
+                            </ul>
+                        </div>
+                      </div>
+                </li>
+                <li class="pointer fw-bold">
+                    <p class="d-inline-flex gap-1">
+                        <div class="offcanvas-li-container w-100 border-bottom d-flex justify-content-between align-items-center pb-2">
+                            <p class="mb-0">SHOP</p>
+                            <a class="btn p-1 border-white" data-bs-toggle="collapse" href="#collapse-4" role="button" aria-expanded="false">
+                                <img src="./assets/images/arrow-down.png" alt="" class="invert">
+                            </a>
+                        </div>
+                      </p>
+                      <div class="collapse" id="collapse-4">
+                        <div class="card card-body bg-black">
+                            <ul class="offcanvas-submenu list-unstyled text-white d-flex flex-column gap-2">
+                                <li>SHOP</li>
+                                <li>CART</li>
+                                <li>CHECKOUT</li>
+                                <li>SINGLE PRODUCT</li>
+                            </ul>
+                        </div>
+                      </div>
+                </li>
+                <li class="pointer fw-bold">
+                    <p class="d-inline-flex gap-1">
+                        <div class="offcanvas-li-container w-100 border-bottom d-flex justify-content-between align-items-center pb-2">
+                            <p class="mb-0">BLOG</p>
+                            <a class="btn p-1 border-white" data-bs-toggle="collapse" href="#collapse-5" role="button" aria-expanded="false">
+                                <img src="./assets/images/arrow-down.png" alt="" class="invert">
+                            </a>
+                        </div>
+                      </p>
+                      <div class="collapse" id="collapse-5">
+                        <div class="card card-body bg-black">
+                            <ul class="offcanvas-submenu list-unstyled text-white d-flex flex-column gap-2">
+                                <li>BLOG GRID</li>
+                                <li>BLOG CAROUSEL</li>
+                                <li>BLOG STANDARD</li>
+                                <li>BLOG DETAILS</li>
+                            </ul>
+                        </div>
+                      </div>
+                </li>
             </ul>
           </div>
         </div>
