@@ -1,0 +1,43 @@
+:root{
+    /* colors */
+    --accent-clr: #d16527;
+    --black: #161616;
+
+    /* text clrs*/
+    --secondary-txt: #e6e6e6;
+
+    /* font families */
+    --mulish: "Mulish", sans-serif;
+    --chakra: "Chakra Petch", sans-serif;
+
+    /* transitions */
+    --transition-1: all 0.2s linear;
+}
+
+/* text styles */
+
+.chakra{
+    font-family: var(--chakra);
+}
+.mulish{
+    font-family: var(--mulish);
+}
+
+.text-second{
+    color: var(--secondary-txt) !important;
+}
+
+
+/* images styles */
+
+.invert{
+    filter: invert(1);
+}
+
+
+/* hover and pointer */
+
+.pointer{
+    cursor: pointer;
+}
+
