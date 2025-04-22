@@ -63,9 +63,9 @@
                 <!-- nav-phone-number end -->
 
                 <!-- mobile menu  start-->
-                <span class="d-inline d-lg-none">
+                <button class="d-block d-lg-none border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
                     <img src="./assets/images/menu-icon.png" alt="menu" class="invert">
-                </span>
+                </button>
                 <!-- mobile menu end -->
             </nav>
         </div>
@@ -78,6 +78,46 @@
     <footer></footer>
     <!-- footer end -->
 
+    <!-- offcanvas start -->
+      <div class="offcanvas offcanvas-start chakra bg-black text-white" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvas-title">
+            <img src="./assets/images/logo.png" alt="" width="230px">
+          </h5>
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <ul class="list-unstyled">
+                <li class="pointer fw-bold">
+                    <p class="d-inline-flex gap-1">
+                        <div class="offcanvas-li-container w-100 border-bottom d-flex justify-content-between align-items-center pb-2">
+                            <p class="mb-0">HOME</p>
+                            <a class="btn p-1 border-white" data-bs-toggle="collapse" href="#collapse" role="button" aria-expanded="false">
+                                <img src="./assets/images/arrow-down.png" alt="" class="invert">
+                            </a>
+                        </div>
+                      </p>
+                      <div class="collapse" id="collapse">
+                        <div class="card card-body bg-black">
+                            <ul class="offcanvas-submenu list-unstyled text-white d-flex flex-column gap-2">
+                                <li>SERVICE 1</li>
+                                <li>SERVICE 2</li>
+                                <li>SINGLE SERVICE 1</li>
+                                <li>SINGLE SERVICE 2</li>
+                            </ul>
+                        </div>
+                      </div>
+                </li>
+                <li class="pointer fw-bold">PAGES</li>
+                <li class="pointer fw-bold">SERVICES</li>
+                <li class="pointer fw-bold">SHOP</li>
+                <li class="pointer fw-bold">BLOG</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!-- offcanvas end -->
     <!-- js -->
     <script src="./assets/js/boostrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>

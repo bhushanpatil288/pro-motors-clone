@@ -90,6 +90,18 @@
     transform: scaleX(1);
 }
 
+/* offcanvas start */
+
+.offcanvas-body ul li{
+    
+}
+.offcanvas-body ul li:hover{
+    transition: var(--transition-1);
+    color: var(--accent-clr);
+}
+
+/* offcanvas end */
+
 
 /* header end */
 
