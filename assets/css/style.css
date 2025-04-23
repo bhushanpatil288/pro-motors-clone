@@ -273,6 +273,41 @@ header{
 
 /* service section end */
 
+/* services-2 section start */
+
+.banner-heading .h4.fw-bold{
+    background-color: var(--accent-clr);
+}
+.banner-heading h3:hover{
+    color: var(--accent-clr);
+    transition: var(--transition-1);
+}
+
+.banner {
+    padding: 64px 40px 63px;
+    position: relative;
+    overflow: hidden;
+    height: 240px;
+}
+
+.banner-img-container {
+    top: 0;
+    left: 0;
+}
+
+.banner-image {
+    background-image: url(../images/services-2/banner-1.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+.banner-img-2{
+    background-image: url(../images/services-2/banner-2.jpg);
+    opacity: 0.1;
+}
+
+/* services-2 section end */
+
 /* main end */
 
 

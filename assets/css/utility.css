@@ -28,7 +28,9 @@
     font-family: var(--mulish);
 }
 
-
+.heading-clr{
+    color: var(--heading-clr);
+}
 .text-first{
     color: var(--accent-clr);
 }
