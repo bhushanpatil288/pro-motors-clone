@@ -8,6 +8,9 @@
     --heading-clr:#ededed;
     --secondary-txt: #e6e6e6;
 
+    /* border */
+    --border-clr: #343434;
+
     /* font families */
     --mulish: "Mulish", sans-serif;
     --chakra: "Chakra Petch", sans-serif;
@@ -43,7 +46,7 @@
 /* padding and margin */
 
 .pt-70{
-    padding: 158px 0px 0px;
+    padding: 138px 0px 0px;
 }
 
 

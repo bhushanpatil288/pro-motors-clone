@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site</title>
 
-     <!-- fonts -->
-     <!-- chakra petch -->
-     <link rel="stylesheet" href="./assets/fonts/chakra_petch/stylesheet.css" />
-     <!-- molle -->
-     <link rel="stylesheet" href="./assets/fonts/mulish/stylesheet.css">
- 
-     <!-- third party css libraries -->
-     <!-- bootstrap -->
-     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- fonts -->
+    <!-- chakra petch -->
+    <link rel="stylesheet" href="./assets/fonts/chakra_petch/stylesheet.css" />
+    <!-- molle -->
+    <link rel="stylesheet" href="./assets/fonts/mulish/stylesheet.css">
+
+    <!-- third party css libraries -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- swipper -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
     <!--  Base project styles -->
     <link rel="stylesheet" href="./assets/css/utility.css" />
@@ -96,7 +98,7 @@
     <!-- main start -->
     <main>
         <!-- hero section start -->
-        <div class="hero text-white overflow-hidden pt-70">
+        <section class="hero text-white overflow-hidden pt-70">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-xl-9">
@@ -107,7 +109,7 @@
                                 <p class="mulish fw-semibold text-second">
                                     Elit ullamcorper dignissim cras tincidunt lobortis <br /> feugiat. Eget velit aliquet sagittis
                                 </p>
-                                <button class="styled-btn">BOOK ONLINE</button>
+                                <button class="styled-btn mt-5">BOOK ONLINE</button>
                             </div>
                             <div class="car-image position-absolute mt-5 mt-lg-0">
                                 <img src="./assets/images/hero-car.png" alt="" class="img-fluid">
@@ -137,8 +139,49 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- hero section end -->
+        <!-- clients section start -->
+        <section class="clients pt-70">
+            <div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide d-flex justify-content-center position-relative">
+                        <div class="client-card d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/clients/client-01-2.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
+                      <div class="swiper-slide d-flex justify-content-center position-relative">
+                        <div class="client-card d-flex justify-content-center">
+                            <img src="./assets/images/clients/client-02.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
+                      <div class="swiper-slide d-flex justify-content-center position-relative">
+                        <div class="client-card d-flex justify-content-center">
+                            <img src="./assets/images/clients/client-03.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
+                      <div class="swiper-slide d-flex justify-content-center position-relative">
+                        <div class="client-card d-flex justify-content-center">
+                            <img src="./assets/images/clients/client-04.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
+                      <div class="swiper-slide d-flex justify-content-center position-relative">
+                        <div class="client-card d-flex justify-content-center">
+                            <img src="./assets/images/clients/client-05.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
+                      <div class="swiper-slide d-flex justify-content-center position-relative">
+                        <div class="client-card d-flex justify-content-center">
+                            <img src="./assets/images/clients/client-06.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </section>
+        <!-- clients section end -->
     </main>
     <!-- main end -->
     <!-- footer start -->
@@ -269,6 +312,38 @@
     <!-- offcanvas end -->
     <!-- js -->
     <script src="./assets/js/boostrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+
+    <!-- swiper scripts -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop:true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            }
+            },
+        });
+      </script>
 </body>
 </html>
