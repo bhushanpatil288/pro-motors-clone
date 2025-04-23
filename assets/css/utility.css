@@ -88,6 +88,21 @@
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 100% 100%, 0 100%, 0 20px);
 }
 
+.sec-btn{
+    border: 1px solid var(--border-clr);
+    background: var(--body-black);
+    display: flex;
+    padding: 14px 26px;
+    color: white;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.sec-btn.active{
+    background: var(--accent-clr);
+}
+
 
 /* hover and pointer */
 
