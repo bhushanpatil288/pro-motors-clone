@@ -306,6 +306,58 @@ header{
     opacity: 0.1;
 }
 
+
+
+.service-2-btn span {
+    transition: color 0.3s;
+  }
+  
+.services-2-btn-container:hover .service-2-btn span {
+    color: var(--accent-clr) !important;
+}
+
+
+
+.service-2-btn::before{
+    content: ">";
+    font-weight: bold;
+    font-family: var(--chakra);
+    position: relative;
+    font-size: 10px;
+    margin-right: 10px;
+    line-height: 1;
+    color: rgb(237, 237, 237);
+    background-color: var(--accent-clr);
+    clip-path: polygon(5px 0px, 100% 0px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0px 100%, 0px 5px);
+    padding: 4.5px 6.5px 5.5px 7.5px;
+    overflow: hidden;
+    top: -3px;
+}
+
+.services-2-banner-2{
+    border-top:2px solid var(--border-clr);
+    transition: all 0.2s linear;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-2-btn-container{
+    justify-self: flex-end !important;
+    margin-top: auto;
+}
+
+.services-2-banner-2:hover{
+    border-top: 2px solid var(--accent-clr);
+}
+
+.services-2-banner-2 h4{
+    transition: all 0.2s linear;
+}
+.services-2-banner-2 h4:hover{
+    color: var(--accent-clr);
+}
+
 /* services-2 section end */
 
 /* main end */
