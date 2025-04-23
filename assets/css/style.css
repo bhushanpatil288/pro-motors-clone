@@ -235,6 +235,39 @@ header{
 
 /* clients section end */
 
+/* service section start */
+
+.service-bg{
+    background-image: url(../images/services/tyre-bg.jpg);
+    background-size: cover;
+    padding: 100px 100px;
+}
+
+.service-sub-text{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.whats-incuded-item-container{
+    position: relative;
+    padding-left: 30px;
+    display: block;
+}
+
+.whats-incuded-item-container::before{
+    content: '';
+    display: inline-block; 
+    background-color: #d16527;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* service section end */
+
 /* main end */
 
 
