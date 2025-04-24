@@ -104,7 +104,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-xl-9">
-                        <div class="hero-left d-lg-flex position-relative d-block">
+                        <div class="hero-left d-lg-flex position-relative d-block user-select-none">
                             <div class="position-relative">
                                 <h2 class="secHeading chakra h1 position-absolute d-none d-md-block">PROMOTORS</h2>
                                 <h1 class="mainHeading chakra fw-bold heading-clr">BOOK YOUR CAR <br /> SERVICE</h1>
@@ -146,7 +146,7 @@
         <!-- clients section start -->
         <section class="clients mt-2">
             <div>
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper user-select-none">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide d-flex justify-content-center position-relative">
                         <div class="client-card d-flex justify-content-center align-items-center">
@@ -598,6 +598,101 @@
             </div>
         </section>
         <!-- our shop section end -->
+        <!-- Reviews section start -->
+        <section class="reviews heading-clr pt-70">
+            <div class="container">
+                <div class="reviews-header chakra d-flex justify-content-between align-items-center">
+                    <h2 class="col-3 fw-bold">BEST CAR WASH EXPERIENCE</h2>
+                    <p class="col-3">A car wash experience should be convenient and time-efficient</p>
+                </div>
+                <div class="row mt-5 justify-content-center align-items-center gy-5">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="swiper reviewsSwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="review-card chakra user-select-none">
+                                    <div class="review-card-heading d-flex align-items-center gap-3">
+                                        <span class="review-quates fs-2"><i class="ri-double-quotes-r"></i></span>
+                                        <h4 class="fs-5 m-0">HIGHLY RECOMMENDED</h4>
+                                    </div>
+                                    <div class="review mt-4">
+                                        <p class="mulish">Promotors is the best place to go if you want high-qaality work and a truly personalised experience. They are approachable and trustworthy</p>
+                                    </div>
+                                    <div class="reviewer d-flex justify-content-between align-items-center mt-4">
+                                        <p class="m-0">Aron Almaraz</p>
+                                        <div class="reviewer-rating">
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span><i class="ri-star-fill"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="review-card chakra user-select-none">
+                                    <div class="review-card-heading d-flex align-items-center gap-3">
+                                        <span class="review-quates fs-2"><i class="ri-double-quotes-r"></i></span>
+                                        <h4 class="fs-5 m-0">GENUINE PRICES</h4>
+                                    </div>
+                                    <div class="review mt-4">
+                                        <p class="mulish">They charge a resasonable amount and offer great solutions to automotive issues. Thank you for your excellent work. Massa ticidunt nunc cupidatat</p>
+                                    </div>
+                                    <div class="reviewer d-flex justify-content-between align-items-center mt-4">
+                                        <p class="m-0">Aron Almaraz</p>
+                                        <div class="reviewer-rating">
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span><i class="ri-star-fill"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="review-card chakra user-select-none">
+                                    <div class="review-card-heading d-flex align-items-center gap-3">
+                                        <span class="review-quates fs-2"><i class="ri-double-quotes-r"></i></span>
+                                        <h4 class="fs-5 m-0">MUCH SATISFIED</h4>
+                                    </div>
+                                    <div class="review mt-4">
+                                        <p class="mulish">My car was not used for a long time. The AC of the car started blowing dust from its vents. I booked my service and they told lorem me the air.</p>
+                                    </div>
+                                    <div class="reviewer d-flex justify-content-between align-items-center mt-4">
+                                        <p class="m-0">Aron Almaraz</p>
+                                        <div class="reviewer-rating">
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span><i class="ri-star-fill"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 overflow-hidden">
+                        <div class="overflow-hidden">
+                            <span class="position-relative review-img overflow-hidden">
+                                <img src="./assets/images/reviews/img-1-1.jpg" alt="" class="img-fluid img-1-1">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 overflow-hidden">
+                        <div class="overflow-hidden">
+                            <span class="position-relative review-img overflow-hidden">
+                                <img src="./assets/images/reviews/img-2-1.jpg" alt="" class="img-fluid img-2-1">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Reviews section end -->
     </main>
     <!-- main end -->
     <!-- footer start -->
@@ -761,6 +856,15 @@
                 spaceBetween: 30,
             }
             },
+        });
+        var reviewsSwiper = new Swiper(".reviewsSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          loop:true,
+        //   autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        //   },
         });
     </script>
     <!-- isotope -->

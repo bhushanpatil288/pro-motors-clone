@@ -431,10 +431,54 @@ header{
     opacity: 1;
 }
 
-
-
-
 /* our shop section end */
+
+/* reviews section start */
+
+.review-card{
+    padding: 20px 40px;
+    border: 1px solid var(--border-clr);
+    transition: var(--transition-1);
+}
+.review-card:hover{
+    border: 1px solid var(--accent-clr);
+}
+
+.review{
+    border-bottom: 1px solid var(--border-clr) ;
+}
+
+.review-quates{
+    color: var(--accent-clr);
+}
+
+.reviewer-rating i{
+    color: #eccc38;
+}
+
+span:hover .img-1-1{
+    animation: blur 1s linear none 1;
+    transform: scaleX(-1) scaleY(-1);
+}
+
+.img-2-1{
+    transition: var(--transition-1);
+}
+span:hover .img-2-1{
+    animation: blur 1s linear none 1;
+    transform: scale(1.1);
+}
+
+@keyframes blur {
+    0%{
+        filter: blur(10px);
+    }
+    100%{
+        filter: blur(0);
+    }
+}
+
+/* reviews section end */
 
 /* main end */
 
