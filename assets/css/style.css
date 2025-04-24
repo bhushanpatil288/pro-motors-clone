@@ -150,12 +150,6 @@ header{
 
 .secHeading{
     font-size: 170px;
-    z-index: -1;
-    color: red;
-    user-select: none;
-    color: transparent;
-    -webkit-text-stroke: 2px #242424; /* 2px border with black color */
-
     top: -100px;
     left: -100px;
 }
@@ -351,14 +345,96 @@ header{
     border-top: 2px solid var(--accent-clr);
 }
 
-.services-2-banner-2 h4{
-    transition: all 0.2s linear;
-}
-.services-2-banner-2 h4:hover{
-    color: var(--accent-clr);
+/* services-2 section end */
+
+/* our shop section start */
+
+.our-shop .secHeading{
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    transition: var(--transition-1);
 }
 
-/* services-2 section end */
+.our-shop:hover .secHeading{
+    top: -60px;
+}
+
+.our-shop-product-image{
+    transition: var(--transition-1);
+    border-top: 2px solid var(--border-clr);
+    background-color: var(--second-black);
+}
+
+.our-shop-product-image:hover{
+    border-top: 2px solid var(--accent-clr);
+}
+
+.our-shop-product-image img{
+    transition: var(--transition-1);
+}
+
+.our-shop-product-image:hover img{
+    scale: 0.9;
+}
+
+.add-to-card{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-to-card::before{
+    content: ">";
+    font-weight: bold;
+    font-family: var(--chakra);
+    position: relative;
+    font-size: 10px;
+    margin-right: 10px;
+    line-height: 1;
+    color: rgb(237, 237, 237);
+    background-color: var(--accent-clr);
+    clip-path: polygon(5px 0px, 100% 0px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0px 100%, 0px 5px);
+    padding: 4.5px 6.5px 5.5px 7.5px;
+    overflow: hidden;
+    top: -10px;
+}
+
+.shop-eye, .shop-heart{
+    color: var(--heading-clr);
+    background-color: var(--accent-clr);
+    padding: 8px 10px;
+    font-weight: bold;
+    transition: var(--transition-1);
+    border: 1px solid var(--accent-clr);
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.shop-eye:hover, .shop-heart:hover{
+    color: var(--accent-clr);
+    background-color: var(--body-black);
+}
+
+.shop-eye{
+    right: 10px;
+    top: 70px;
+}
+.shop-heart{
+    right: 10px;
+    top: 20px;
+}
+
+.our-shop-top:hover .shop-eye, .our-shop-top:hover .shop-heart{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+/* our shop section end */
 
 /* main end */
 
