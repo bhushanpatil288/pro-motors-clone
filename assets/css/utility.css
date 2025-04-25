@@ -62,7 +62,10 @@
 /* padding and margin */
 
 .pt-70{
-    padding: 138px 0px 0px;
+    padding-top: 138px;
+}
+.pb-70{
+    padding-bottom: 138px;
 }
 
 
