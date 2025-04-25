@@ -570,4 +570,16 @@ span:hover .img-2-1{
 
 /* footer top end */
 
+/* footer bottom start */
+
+.footer-bottom span{
+    color: var(--accent-clr);
+    transition: var(--transition-1);
+}
+.footer-bottom span:hover{
+    color: var(--heading-clr);
+}
+
+/* footer bottom end */
+
 /* footer end */
