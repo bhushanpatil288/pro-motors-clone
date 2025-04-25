@@ -606,7 +606,7 @@
                     <p class="col-md-3">A car wash experience should be convenient and time-efficient</p>
                 </div>
                 <div class="row mt-5 justify-content-center align-items-center gy-5">
-                    <div class="col-md-6 col-xl-4">
+                    <div class="col-md-12 col-xl-4">
                         <div class="swiper reviewsSwiper">
                             <div class="swiper-wrapper">
                               <div class="swiper-slide">
@@ -702,8 +702,8 @@
                         <h3 class="heading-clr chakra h1 fw-bold">WORKSHOP NEAR YOU</h3>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-6">
+                <div class="row mt-5 gy-5">
+                    <div class="col-xl-6">
                         <div class="location-bg-1">
                             <div class="location-ct">
                                 <h3 class="chakra fw-bold">NORTH PROMOTORS</h3>
@@ -724,7 +724,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-xl-6">
                         <div class="location-bg-2">
                             <div class="location-ct">
                                 <h3 class="chakra fw-bold">AVENUE PROMOTORS</h3>
@@ -752,7 +752,73 @@
     </main>
     <!-- main end -->
     <!-- footer start -->
-    <footer></footer>
+    <footer>
+        <section class="footer-top secBlack overflow-hidden heading-clr">
+            <div class="container overflow-hidden">
+                <div class="row overflow-hidden gy-4">
+                    <div class="col-xxl-3 col-xl-3 col-lg-12">
+                        <div>
+                            <div class="logo mb-4">
+                                <img src="./assets/images/logo.png" alt="" class="img-fluid" width="200px">
+                            </div>
+                            <p class="footer-description mulish">
+                                Every service is rigorously screened and constantly rated to ensure you get the best service.
+                            </p>
+                            <p class="m-0 text-second">Support center 24/7</p>
+                            <h3 class="chakra fw-bold fs-5">+91 926 582-7402</h3>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6">
+                        <div class="chakra">
+                            <p class="fw-bold">ABOUT US</p>
+                            <ul class="list-unstyled footer-ul d-flex flex-column justify-content-center gap-3 ps-4">
+                                <li class="fw-semibold position-relative pointer">ABOUT US</li>
+                                <li class="fw-semibold position-relative pointer">OUR TEAM</li>
+                                <li class="fw-semibold position-relative pointer">OUR WORKS</li>
+                                <li class="fw-semibold position-relative pointer">FAQ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6">
+                        <div class="chakra">
+                            <p class="fw-bold">POPULAR SERVICES</p>
+                            <ul class="list-unstyled footer-ul d-flex flex-column justify-content-center gap-3 ps-4">
+                                <li class="fw-semibold position-relative pointer">TIRE REPAIR</li>
+                                <li class="fw-semibold position-relative pointer">BRAKE REPAIR</li>
+                                <li class="fw-semibold position-relative pointer">ENGINE REPAIR</li>
+                                <li class="fw-semibold position-relative pointer">STEERING REPAIR</li>
+                                <li class="fw-semibold position-relative pointer d-lg-none">COOLING SYSTEM</li>
+                                <li class="fw-semibold position-relative pointer d-lg-none">WHEEL ALIGNMENT</li>
+                                <li class="fw-semibold position-relative pointer d-lg-none">BATTERY STARTING</li>
+                                <li class="fw-semibold position-relative pointer d-lg-none">SUSPENSION REPAIR</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6  d-lg-block d-none">
+                        <div class="chakra">
+                            <p class="fw-bold">&nbsp;</p>
+                            <ul class="list-unstyled footer-ul d-flex flex-column justify-content-center gap-3 ps-4">
+                                <li class="fw-semibold position-relative pointer">COOLING SYSTEM</li>
+                                <li class="fw-semibold position-relative pointer">WHEEL ALIGNMENT</li>
+                                <li class="fw-semibold position-relative pointer">BATTERY STARTING</li>
+                                <li class="fw-semibold position-relative pointer">SUSPENSION REPAIR</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-12 overflow-hidden">
+                        <div class="chakra overflow-hidden position-relative footer-subscribe">
+                            <p class="fw-bold">SUBSCRIBE</p>
+                            <form action="#">
+                                <label for="email">YOUR EMAIL</label> <br />
+                                <input type="email" name="email" id="email" placeholder="Enter Your Email Address">
+                            </form>
+                            <button class="styled-btn overflow-hidden mt-3 w-100">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
     <!-- footer end -->
 
     <!-- offcanvas start -->
@@ -921,6 +987,18 @@
             delay: 2500,
             disableOnInteraction: false,
           },
+          breakpoints:{
+            1400:{
+                slidesPerView: 1,
+            },
+            1200:{
+                slidesPerView: 1,
+            },
+            992:{
+                slidesPerView: 2,
+                spaceBetween: 20,
+            }
+          }
         });
     </script>
     <!-- isotope -->

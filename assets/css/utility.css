@@ -19,6 +19,12 @@
     --transition-1: all 0.2s linear;
 }
 
+/* backgorunds */
+
+.secBlack{
+    background-color: var(--second-black);
+}
+
 /* text styles */
 
 .chakra{

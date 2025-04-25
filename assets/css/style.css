@@ -524,4 +524,50 @@ span:hover .img-2-1{
 
 /* footer start */
 
+/* footer top start */
+
+.footer-ul li::before{
+    content: '•';
+    font-family: var(--chakra);
+    font-size: 20px;
+    color: var(--accent-clr);
+    position: absolute;
+    display: inline-block;
+    left: -16px;
+    top: -5px;
+}
+.footer-ul li::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom: 2px dashed var(--accent-clr);
+    transition: all 200ms linear 0ms;
+}
+
+.footer-ul li:hover::after{
+    width: 100%;
+}
+
+.footer-subscribe form input{
+    width: 100%;
+    color: #ededed;
+    background-color: initial;
+    font-size: 14px;
+    line-height: 2.7857;
+    font-weight: 600;
+    padding: 0;
+    border: none;
+    border-bottom:1px solid var(--border-clr);
+    outline: none;
+}
+
+.footer-subscribe form input::placeholder{
+    color: var(--heading-clr);
+    font-family: var(--mulish);
+}
+
+/* footer top end */
+
 /* footer end */
