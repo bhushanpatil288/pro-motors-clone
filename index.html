@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <!-- swipper -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--  Base project styles -->
     <link rel="stylesheet" href="./assets/css/utility.css" />
@@ -185,7 +187,7 @@
         </section>
         <!-- clients section end -->
         <!-- services section start -->
-        <section class="services pt-70 heading-clr overflow-hidden">
+        <section class="services pt-70 heading-clr overflow-hidden" data-aos="fade-up">
             <div class="container">
                 <div class="services-heading chakra">
                     <h2 class="h1 fw-bold text-center">AUTO CARE, IT'S WHAT WE'RE ALL ABOUT</h2>
@@ -321,7 +323,7 @@
         <section class="services-2 pt-70 heading-clr overflow-hidden">
             <div class="container">
                 <div class="row gy-5 gx-5">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-right">
                         <div class="banner position-relative d-flex flex-column align-items-center align-items-xl-start justify-content-center">
                             <div class="banner-heading col-9 chakra heading-clr">
                                 <div class="d-flex gap-4 align-items-center">
@@ -337,7 +339,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-left">
                         <div class="banner position-relative d-flex flex-column align-items-center align-items-xl-start justify-content-center">
                             <div class="banner-heading col-9 chakra heading-clr">
                                 <div class="d-flex gap-4 align-items-center">
@@ -398,7 +400,7 @@
         </section>
         <!-- services-2 section end -->
         <!-- our shop section start -->
-        <section class="our-shop pt-70 overflow-hidden">
+        <section class="our-shop pt-70 overflow-hidden" data-aos="fade-down">
             <div class="container position-relative">
                 <h3 class="secHeading chakra h1 position-absolute">PRODUCTS</h3>
                 <div class="our-shop-header d-flex position-relative justify-content-between align-items-center overflow-hidden">
@@ -958,6 +960,7 @@
     <script src="./assets/js/boostrap.bundle.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/script.js"></script>
 
     <!-- swiper scripts -->
@@ -1023,6 +1026,10 @@
             console.log(filterValue);
             $grid.isotope({ filter: filterValue });
         });
+    </script>
+    <!-- aos -->
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
