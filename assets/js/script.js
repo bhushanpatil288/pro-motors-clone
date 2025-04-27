@@ -9,3 +9,11 @@ secondaryButtons.forEach(button =>{
         button.classList.add("active");
     })
 })
+
+// preloader
+
+let preloader = document.querySelector(".preloader");
+
+setTimeout(()=>{
+    preloader.style.display = "none";   
+},2000)
