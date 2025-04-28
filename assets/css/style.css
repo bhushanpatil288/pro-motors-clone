@@ -29,7 +29,43 @@
   
 body{
     background-color: var(--second-black) !important;
+    overflow-x: hidden;
 }
+
+/* custom cursor start */
+
+#cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px dashed var(--accent-clr);
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+  z-index: 999999;
+  animation: spin 2s linear infinite;
+  box-shadow: inset 0px 0px 10px var(--accent-clr);
+}
+
+/* Spin animation */
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+.clicked {
+  width: 20px !important;
+  height: 20px !important;
+  transform: translate(-50%, -50%) scale(0.7) !important;
+}
+
+/* custom cursor end */
 
 /* preloader start */
 
