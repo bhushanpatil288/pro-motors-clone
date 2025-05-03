@@ -800,6 +800,38 @@ span:hover .img-2-1{
 
 /* location section end */
 
+/* scoll To top */
+
+.scroll-top{
+  position: fixed;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+  color: #c6c6c6;
+  background-color: var(--accent-clr);
+  border-radius: 50%;
+  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-top span{
+  transition: var(--transition-1);
+}
+
+.scroll-top:hover span{
+  color: #dadada;
+  scale: 1.2;
+}
+
+.scroll-top:active span{
+  scale: 1;
+}
+
 /* main end */
 
 
